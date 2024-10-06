@@ -140,7 +140,7 @@ margin: 1em 3em;
 
 
 .body-image {
-    display: flex;
+    display: block;
     flex-shrink: auto;
     justify-content: center;
     max-width: 300px;
