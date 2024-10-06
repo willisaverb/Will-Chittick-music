@@ -2,46 +2,49 @@
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
-    background-color: antiquewhite;
-    padding-top: 80px;
+    background-color: lightgoldenrodyellow;
+    padding-top: 80px; /* Padding to create space for the fixed nav */
 }
 
 /* Navigation styles */
 nav {
-    font-family: 'Manrope', sans-serif;
-    color: antiquewhite;
+    font-family: 'Homemade Apple', sans-serif;
+    color: black;
     position: fixed;
+    position: fixed;
+    top: 0; /* Ensure the nav stays at the top of the page */
     width: 100%;
     height: 50px;
-    z-index: 1000;
+    z-index: 1000; /* Ensure nav stays on top of other content */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* Space items evenly across nav */
     align-items: center; /* Vertically center items */
-    margin-bottom: 5px;
-    
-    
+     /* Added to make the nav visible on scroll */
 }
 
+/* Navigation item styles */
 nav .item a {
-    font-size: 1rem; /* Define size for menu items */
-    padding-top: 20px;
+    font-size: 1rem; /* Font size for menu items */
+    color: black    ;
+    text-decoration: none; /* Remove underline from links */
 }
 
-/* Logo styling - twice the size of menu items */
-
-    nav img {
-    height: 2em; /* Initial height of the logo */
-    /* Adjust the size of the logo compared to menu items */
-    width: auto; /* Keep aspect ratio intact */
+/* Logo styling */
+nav img {
+    height: 2em; /* Set initial height of logo */
+    width: auto; /* Maintain aspect ratio */
     transform: scale(2); /* Double the size of the logo */
-       
+    
+    /* Consider using a larger logo image instead of scaling to improve quality */
 }
 
+/* Heading styles */
 h1 {
     text-align: center;
     margin-top: 2rem;
 }
 
+/* Iframe styles */
 iframe {
     display: block;
     max-width: 300px;
@@ -53,77 +56,97 @@ iframe {
     font-weight: 100;
 }
 
+/* Main image responsiveness */
 .main-image {
-    max-width: 100%; /* Ensure the image never exceeds the width of its container */
+    max-width: 100%; /* Image should not exceed container width */
     height: auto;    /* Maintain aspect ratio */
-    display: block;  /* Ensure there is no unwanted inline space around the image */
+    display: block;  /* Remove any inline spacing */
     margin: 0 auto;  /* Center the image */
+    padding-top: 150px;
+    
 }
 
-/* Media query for even smaller screens */
+.main-logo {
+    max-width: 100%; /* Logo will scale based on the container's width (viewport) */
+    height: auto;    /* Maintain the aspect ratio */
+    margin: 150px auto 0 auto; /* Vertically space it with margin-top */
+    display: block;  /* Ensure it's a block-level element (removing any unwanted inline behavior) */
+    padding-top: 0px; /* Padding not needed here unless for design adjustments */
+}
+
+/* Media query for smaller screens */
 @media (max-width: 768px) {
-    .main-image {
-        width: 90%;   /* Shrinks the image a bit more on small screens, keeping it proportional */
+    .main-logo {
+        max-width: 80%; /* Shrink the logo slightly on smaller screens */
     }
 }
+
+
+/* Media query for smaller screens (tablets and phones) */
+@media (max-width: 768px) {
+    .main-image {
+        width: 90%;   /* Shrinks the image further for small screens */
+    }
     
+    nav .item { 
+        display: block; /* Stacks the nav items vertically on small screens */
+        text-align: center; /* Center nav items for better mobile alignment */
     }
 
     nav img {
-        height: rem; /* Increase logo size on mobile */
+        height: 3em; /* Adjust logo size on mobile */
+        transform: scale(1.5); /* Slightly smaller logo for mobile */
         padding-top: 1rem;
-        top: auto;
-    }
-
-    .content {
-          max-width: 800px;
-    margin: 1rem auto;
-    padding: 1rem;
-    text-align: justify;
-        margin-top; 15px;
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    iframe {
-        max-width: 100%;
-        margin: 1rem auto;
     }
 }
 
-.body-corporate {
-    max-width: 800px;
-    margin: auto;
-    padding: 0.5rem;
-    text-align: justify;
-}
-
+/* Content section styling */
 .content {
     max-width: 800px;
-    margin: 1rem auto;
-    padding:  1rem 1rem;
+    margin: 0.5rem auto;
+    padding: 1rem;
     text-align: justify;
-    margin: 1rem 10rem;
+    display: flex;
+    flex-direction: column;
+    /* Removed redundant second margin declaration */
 }
 
-
-
+/* Main body background with fixed image */
 .body-main {
-   font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color: #f5f6f7;
     background: url('CRO2467-R1-14-15.jpg') no-repeat center center fixed;
-    background-size: fill; /* Ensures the image fits within the viewport without distortion */
-    background-attachment: local; 
-    background-color: black; /* Fallback color in case image doesn't load */
+    background-size: cover; /* Changed 'fill' to 'cover' for a better fit */
+    background-attachment: fixed; /* Ensures the background stays in place while scrolling */
+    background-color: black; /* Fallback color */
     margin: 0;
     padding: 0;
 }
 
+/* Empty or unused classes */
 .homemenu {
-    
+    /* Define styles if necessary */
 }
 
 span {
+    /* Define styles if necessary */
+}
+
+.body-corporate 
+{display: flex;
+margin: 1em 3em;
+    justify-content: flex-start;
+}
+
+
+.body-image {
+    display: flex;
+    flex-shrink: auto;
+    justify-content: center;
+    max-width: 300px;
+    width: auto;
+    border: solid double black;
+    position: relative;
+    flex-wrap: nowrap;
     
 }
