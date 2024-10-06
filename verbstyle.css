@@ -1,4 +1,4 @@
-/* Body styles */
+/* verbstyle.css */
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
@@ -140,7 +140,7 @@ margin: 1em 3em;
 
 
 .body-image {
-    display: block;
+    display: flex;
     flex-shrink: auto;
     justify-content: center;
     max-width: 300px;
@@ -148,5 +148,6 @@ margin: 1em 3em;
     border: solid double black;
     position: relative;
     flex-wrap: nowrap;
+    margin-left: 30vh;
     
 }
