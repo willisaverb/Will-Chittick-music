@@ -1,8 +1,8 @@
-/* verbstyle.css */
+/* Body styles */
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
-    background-color: lightgoldenrodyellow;
+    background-color: antiquewhite;
     padding-top: 80px; /* Padding to create space for the fixed nav */
 }
 
@@ -12,6 +12,7 @@ nav {
     color: black;
     position: fixed;
     position: fixed;
+    background-color: antiquewhite;
     top: 0; /* Ensure the nav stays at the top of the page */
     width: 100%;
     height: 50px;
@@ -104,9 +105,10 @@ iframe {
 .content {
     max-width: 800px;
     margin: 0.5rem auto;
-    padding: 1rem;
+    padding: 0;
     text-align: justify;
     display: flex;
+    position: absolute;
     flex-direction: column;
     /* Removed redundant second margin declaration */
 }
@@ -132,22 +134,29 @@ span {
     /* Define styles if necessary */
 }
 
-.body-corporate 
-{display: flex;
-margin: 1em 3em;
-    justify-content: flex-start;
+.body-corporate {
+    position: relative;  /* Ensure the element can be positioned with respect to other elements */
+    z-index: 100;
+    top: 20%; /* A high value to ensure it sits above other elements (like the background) */
+    color: #f5f6f7;      /* Text color that contrasts with the background */
+    padding: 20px;
+    max-width: 70%;
+    margin: 25px auto;
+   align-content: center;
+    /* Optional: Add some padding for better readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to make text stand out */
 }
+
 
 
 .body-image {
     display: flex;
-    flex-shrink: auto;
     justify-content: center;
-    max-width: 300px;
+    max-width: 70%;
     width: auto;
+    z-index: 5;
     border: solid double black;
     position: relative;
-    flex-wrap: nowrap;
-    margin-left: 30vh;
+    margin: 0 auto;
     
 }
