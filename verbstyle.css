@@ -12,7 +12,7 @@ nav {
     color: black;
     position: fixed;
     position: fixed;
-    background-color: antiquewhite;
+   
     top: 0; /* Ensure the nav stays at the top of the page */
     width: 100%;
     height: 50px;
@@ -159,4 +159,44 @@ span {
     position: relative;
     margin: 0 auto;
     
+}
+
+.upcoming-shows {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.show-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+.show-date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.show-venue {
+    font-size: 1rem;
+    color: #666;
+}
+
+.show-link {
+    background-color: #fcdeb8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.show-link:hover {
+    background-color: #cc5200;
 }
