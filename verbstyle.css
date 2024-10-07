@@ -2,7 +2,7 @@
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
-    background-color: antiquewhite;
+    background-color: #fff3e1;
     padding-top: 80px; /* Padding to create space for the fixed nav */
 }
 
@@ -52,6 +52,7 @@ nav img {
 h1 {
     text-align: center;
     margin-top: 2rem;
+    font-family: 'Homemade Apple'
 }
 
 /* Iframe styles */
@@ -70,9 +71,10 @@ iframe {
 .main-image {
     max-width: 100%; /* Image should not exceed container width */
     height: auto;    /* Maintain aspect ratio */
-    display: block;  /* Remove any inline spacing */
+    display: flex;  /* Remove any inline spacing */
     margin: 0 auto;  /* Center the image */
     padding-top: 150px;
+    position: absolute;
     
 }
 
@@ -153,7 +155,7 @@ span {
     margin: 25px auto;
    align-content: center;
     /* Optional: Add some padding for better readability */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to make text stand out */
+    background-color: rgba(0, 0, 0, 0.2); /* Optional: Add a semi-transparent background to make text stand out */
 }
 
 
@@ -171,10 +173,22 @@ span {
 }
 
 .upcoming-shows {
+    font-family: "Manrope";
     margin: 2rem auto;
     max-width: 800px;
     padding: 1rem;
-    background-color: #f9f9f9;
+    margin 150px;
+
+}
+
+.upcoming-shows h2 {
+    font-family: "Homemade Apple";
+    margin: 2rem auto;
+    max-width: 800px;
+    display: block;
+    position: relative;
+    margin: 30px 30px 30px 30px;
+
 }
 
 .show-card {
@@ -184,7 +198,9 @@ span {
     border: 1px solid #ccc;
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #fff;
+    background-color: #8c857b;
+    margin: 1rem;
+    border-radius: 5px;
 }
 
 .show-date {
@@ -199,7 +215,7 @@ span {
 }
 
 .show-link {
-    background-color: #fcdeb8;
+    background-color: #9f9d9c;
     color: #fff;
     padding: 0.5rem 1rem;
     text-decoration: none;
@@ -207,5 +223,5 @@ span {
 }
 
 .show-link:hover {
-    background-color: #cc5200;
+    background-color: #fff3e1;
 }
