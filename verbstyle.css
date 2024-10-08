@@ -127,7 +127,7 @@ iframe {
 /* Main body background with fixed image */
 .body-main {
     font-family: 'Work Sans', sans-serif;
-    color: #f3f5fb;
+    color: #f4f5fc;
     background: url('CRO2467-R1-14-15.jpg') no-repeat center center fixed;
     background-size: cover; /* Changed 'fill' to 'cover' for a better fit */
     background-attachment: fixed; /* Ensures the background stays in place while scrolling */
@@ -149,7 +149,7 @@ span {
     position: relative;  /* Ensure the element can be positioned with respect to other elements */
     z-index: 100;
     top: 20%; /* A high value to ensure it sits above other elements (like the background) */
-    color: #f3f5fb;      /* Text color that contrasts with the background */
+    color: #f4f5fc;      /* Text color that contrasts with the background */
     padding: 20px;
     max-width: 70%;
     margin: 25px auto;
