@@ -6,6 +6,13 @@ body {
     padding-top: 80px; /* Padding to create space for the fixed nav */
 }
 
+@font-face {
+  font-family: 'Handright';
+  src: url('https://willisaverb.com/Handright-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Navigation styles */
 nav {
     font-family: 'Handright', sans-serif;
