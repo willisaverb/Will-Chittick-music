@@ -8,7 +8,7 @@ body {
 
 /* Navigation styles */
 nav {
-    font-family: 'Homemade Apple', sans-serif;
+    font-family: 'Handright', sans-serif;
     color: black;
     position: fixed;
     position: fixed;
@@ -52,7 +52,7 @@ nav img {
 h1 {
     text-align: center;
     margin-top: 2rem;
-    font-family: 'Homemade Apple'
+    font-family: 'Handright'
 }
 
 /* Iframe styles */
@@ -130,10 +130,12 @@ iframe {
     color: #f4f5fc;
     background: url('CRO2467-R1-14-15.jpg') no-repeat center center fixed;
     background-size: cover; /* Changed 'fill' to 'cover' for a better fit */
-    background-attachment: fixed; /* Ensures the background stays in place while scrolling */
+    /*background-attachment: fixed;  Ensures the background stays in place while scrolling */
     background-color: black; /* Fallback color */
     margin: 0;
     padding: 0;
+    animation: backgroundscale 10s ease-in-out infinite; /* Continuous scaling animation */
+    
 }
 
 /* Empty or unused classes */
@@ -173,7 +175,7 @@ span {
 }
 
 .upcoming-shows {
-    font-family: "Manrope";
+    font-family: "Handright";
     margin: 2rem auto;
     max-width: 800px;
     padding: 1rem;
@@ -182,7 +184,7 @@ span {
 }
 
 .upcoming-shows h2 {
-    font-family: "Homemade Apple";
+    font-family: "Manrope", "Homemade Apple";
     margin: 2rem auto;
     max-width: 800px;
     display: block;
@@ -204,7 +206,8 @@ span {
 }
 
 .show-date {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: "Manrope";
     font-weight: bold;
     color: #333;
 }
