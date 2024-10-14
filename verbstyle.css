@@ -97,6 +97,7 @@ iframe {
 @media (max-width: 768px) {
     .main-logo {
         max-width: 80%; /* Shrink the logo slightly on smaller screens */
+        margin-top: inherit;
     }
 }
 
@@ -104,7 +105,10 @@ iframe {
 /* Media query for smaller screens (tablets and phones) */
 @media (max-width: 768px) {
     .main-image {
-        width: 90%;   /* Shrinks the image further for small screens */
+        width: 90%;
+    
+        
+        /* Shrinks the image further for small screens */
     }
     
     nav .item { 
@@ -116,6 +120,11 @@ iframe {
         height: 3em; /* Adjust logo size on mobile */
         transform: scale(1.5); /* Slightly smaller logo for mobile */
         padding-top: 1rem;
+    }
+    .homemenu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50%;
     }
 }
 
@@ -133,7 +142,7 @@ iframe {
 
 /* Main body background with fixed image */
 .body-main {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Handright', sans-serif;
     color: #f4f5fc;
     background: url('CRO2467-R1-14-15.jpg') no-repeat center center fixed;
     background-size: cover; /* Changed 'fill' to 'cover' for a better fit */
