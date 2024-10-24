@@ -125,7 +125,7 @@ iframe {
     nav .item { 
         display: block; /* Stacks the nav items vertically on small screens */
         text-align: center; /* Center nav items for better mobile alignment */
-        top: 20;
+        margin-top: inherit;
     }
 
     nav img {
