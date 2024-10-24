@@ -1,246 +1,221 @@
-/* Body styles */
-body {
-    font-family: 'Manrope', sans-serif;
-    font-size: 1rem;
-    background-color: #fff3e1;
-    padding-top: 80px; /* Padding to create space for the fixed nav */
-}
+CodePen Home
+Front Page Sandbox
+Will Chittick
+Love
+Save
 
-@font-face {
-  font-family: 'Handright';
-  src: url('https://willisaverb.com/Handright-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Navigation styles */
-nav {
-    font-family: 'Handright', sans-serif;
-    color: black;
-    position: fixed;
-    position: fixed;
-   
-    top: 0; /* Ensure the nav stays at the top of the page */
-    width: 100%;
-    height: 50px;
-    z-index: 1000; /* Ensure nav stays on top of other content */
-    display: flex;
-    justify-content: space-evenly; /* Space items evenly across nav */
-    align-items: center; /* Vertically center items */
-     /* Added to make the nav visible on scroll */
-}
-
-.solid-nav {
-    background: linear-gradient(to bottom, antiquewhite 75%, rgba(255, 255, 255, 0)); /* Gradient fade */
-    position: fixed; /* Ensure it stays at the top of the page */
-    width: 100%;
-    height: 80px; /* Adjust the height as needed */
-    z-index: 1000; /* Make sure it stays above other content */
-}
+Settings
 
 
-/* Navigation item styles */
-nav .item a {
-    font-size: 1rem; /* Font size for menu items */
-    color: black    ;
-    text-decoration: none; /* Remove underline from links */
-}
 
-/* Logo styling */
-nav img {
-    height: 2em; /* Set initial height of logo */
-    width: auto; /* Maintain aspect ratio */
-    transform: scale(2); /* Double the size of the logo */
-    
-    /* Consider using a larger logo image instead of scaling to improve quality */
-}
+User Menu
+HTML
+45 unsaved changes 
 
-/* Heading styles */
-h1 {
-    text-align: center;
-    margin-top: 2rem;
-    font-family: 'Handright'
-}
+HTML Options
 
-/* Iframe styles */
-iframe {
-    display: block;
-    max-width: 300px;
-    margin: 2rem auto;
-    font-size: 10px;
-    color: #cccccc;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-weight: 100;
-}
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta property="og:image" content="https://raw.githubusercontent.com/willisaverb/Will-Chittick-music/main/link-main.png" />
+          <meta property="og:description" content="Surfer-Goth is not a real genre" />
 
-/* Main image responsiveness */
-.main-image {
-    max-width: 100%; /* Image should not exceed container width */
-    height: auto;    /* Maintain aspect ratio */
-    display: flex;  /* Remove any inline spacing */
-    margin: 0 auto;  /* Center the image */
-    padding-top: 150px;
-    position: absolute;
-    
-}
-
-.main-logo {
-    max-width: 100%; /* Logo will scale based on the container's width (viewport) */
-    height: auto;    /* Maintain the aspect ratio */
-    margin: 150px auto 0 auto; /* Vertically space it with margin-top */
-    display: block;  /* Ensure it's a block-level element (removing any unwanted inline behavior) */
-    padding-top: 0px; /* Padding not needed here unless for design adjustments */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .main-logo {
-        max-width: 80%; /* Shrink the logo slightly on smaller screens */
-        margin-top: inherit;
-    }
-}
-
-
-/* Media query for smaller screens (tablets and phones) */
-@media (max-width: 768px) {
-    .main-image {
-        width: 90%;
-    
+        <title>Will Chittick, Musician</title>
+        <link rel="stylesheet" href="verbstyle.css">
+          <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/d5925193a0.js" crossorigin="anonymous"></script>   
         
-        /* Shrinks the image further for small screens */
-    }
-    
-    nav .item { 
-        display: block; /* Stacks the nav items vertically on small screens */
-        text-align: center; /* Center nav items for better mobile alignment */
-    }
+      </head>
+        <header> 
 
-    nav img {
-        height: 3em; /* Adjust logo size on mobile */
-        transform: scale(1.5); /* Slightly smaller logo for mobile */
-        padding-top: 1rem;
+        </header>
+
+    <body class="body-main">
+
+        <container><a href="about.html"><img class='main-logo' id="main-logo" src="https://willisaverb.com/willchittick-logo.png" alt="will-chittick" class="main-image"></a></container>
+
+          <nav class='homemenu'>
+            <span class="item"><a href="about.html"><h1>About</h1></a></span>
+            <span class="item"><a href="news.html"><h1>News</h1></a></span>
+              <span class="item"><a href="music.html"><h1>Music</h1></a></span>
+            <span class="item"><span class="social-buttons"><a href='https://www.facebook.com/willchittickmusic/'>
+              <i class="fa-brands fa-facebook-f"></i></a>
+              
+              <a href='https://www.instagram.com/will_sixty'><i class="fa-brands fa-instagram"></i></a>
+              
+              <a href='mailto:willisaverb@gmail.com'><i class="fa-regular fa-envelope"></i></a>
+              <a href='https://willchittick.bandcamp.com/'><i class="fa-brands fa-bandcamp"></i></a>
+      <a href='https://soundcloud.com/will-chittick'><i class="fa-brands fa-soundcloud"></i></a>
+        
+      </span></span>
+            
+         </nav>
+      <div>
+      <! What happens now if I type in the body?>
+      </div>
+    
+        </body>
+
+1
+​
+2
+    <!DOCTYPE html>
+3
+    <html lang="en">
+4
+      <head>
+5
+        <meta charset="utf-8">
+6
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+7
+          <meta property="og:image" content="https://raw.githubusercontent.com/willisaverb/Will-Chittick-music/main/link-main.png" />
+8
+          <meta property="og:description" content="Surfer-Goth is not a real genre" />
+9
+​
+10
+        <title>Will Chittick, Musician</title>
+11
+        <link rel="stylesheet" href="verbstyle.css">
+12
+          <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+13
+  <script src="https://kit.fontawesome.com/d5925193a0.js" crossorigin="anonymous"></script>   
+14
+        
+15
+      </head>
+16
+        <header> 
+17
+​
+18
+        </header>
+19
+​
+20
+    <body class="body-main">
+21
+​
+22
+        <container><a href="about.html"><img class='main-logo' id="main-logo" src="https://willisaverb.com/willchittick-logo.png" alt="will-chittick" class="main-image"></a></container>
+CSS
+
+CSS Options
+{
+134
+        padding-top: 2rem;
+135
     }
+136
     .homemenu {
+137
         display: flex;
+138
         flex-direction: column;
-        padding-top: 50%;
+139
+        padding-top: 10%;
+140
     }
+141
 }
-
+142
+​
+143
 /* Content section styling */
+144
 .content {
+145
     max-width: 800px;
+146
     margin: 0.5rem auto;
+147
     padding: 0;
+148
     text-align: justify;
+149
     display: flex;
+150
     position: absolute;
+151
     flex-direction: column;
+152
     /* Removed redundant second margin declaration */
+153
 }
-
+154
+​
+155
 /* Main body background with fixed image */
+156
 .body-main {
+157
     font-family: 'Handright', sans-serif;
+158
     color: #f4f5fc;
-    background: url('CRO2467-R1-14-15.jpg') no-repeat center center fixed;
+159
+    background: url('https://willisaverb.com/CRO2467-R1-14-15.jpg') no-repeat center center fixed;
+160
     background-size: cover; /* Changed 'fill' to 'cover' for a better fit */
+161
     /*background-attachment: fixed;  Ensures the background stays in place while scrolling */
-    background-color: black; /* Fallback color */
+162
+    background-color:  /* Fallback color */
+163
     margin: 0;
+164
     padding: 0;
+165
     animation: backgroundscale 10s ease-in-out infinite; /* Continuous scaling animation */
+166
     
+167
 }
-
+168
+​
+169
 /* Empty or unused classes */
+170
 .homemenu {
+171
     /* Define styles if necessary */
+172
 }
-
+173
+​
+174
 span {
+175
     /* Define styles if necessary */
+176
 }
-
+177
+​
+178
 .body-corporate {
+179
     position: relative;  /* Ensure the element can be positioned with respect to other elements */
+180
     z-index: 100;
+181
     top: 20%; /* A high value to ensure it sits above other elements (like the background) */
+182
     color: #f4f5fc;      /* Text color that contrasts with the background */
-    padding: 20px;
-    max-width: 70%;
-    margin: 25px auto;
-   align-content: center;
-    /* Optional: Add some padding for better readability */
-    background-color: rgba(0, 0, 0, 0.2); /* Optional: Add a semi-transparent background to make text stand out */
-}
+JS
 
+JS Options
+1
+​
 
+Last saved October 24, 2024 — 7:33:16 PM
 
-.body-image {
-    display: flex;
-    justify-content: center;
-    max-width: 70%;
-    width: auto;
-    z-index: 5;
-    border: solid double black;
-    position: relative;
-    margin: 0 auto;
-    
-}
-
-.upcoming-shows {
-    font-family: "Handright";
-    margin: 2rem auto;
-    max-width: 800px;
-    padding: 1rem;
-    margin 150px;
-
-}
-
-.upcoming-shows h2 {
-    font-family: "Manrope", "Homemade Apple";
-    margin: 2rem auto;
-    max-width: 800px;
-    display: block;
-    position: relative;
-    margin: 30px 30px 30px 30px;
-
-}
-
-.show-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    background-color: #8c857b;
-    margin: 1rem;
-    border-radius: 5px;
-}
-
-.show-date {
-    font-size: 1rem;
-    font-family: "Manrope";
-    font-weight: bold;
-    color: #333;
-}
-
-.show-venue {
-    font-size: 1rem;
-    color: #fff3e1;
-}
-
-.show-link {
-    background-color: #9f9d9c;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.show-link:hover {
-    background-color: #fff3e1;
-}
+Delete
+Add to Collection
+Fork
+Embed
+Export
+Share
+ConsoleAssetsComments
