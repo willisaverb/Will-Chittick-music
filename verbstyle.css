@@ -56,6 +56,15 @@ nav img {
     /* Consider using a larger logo image instead of scaling to improve quality */
 }
 
+.social-buttons i {
+ 
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem;
+  scale: 3;
+  color: black;
+}
+
 /* Heading styles */
 h1 {
     text-align: center;
