@@ -18,8 +18,8 @@ body {
 nav {
     font-family: 'Handright', sans-serif;
     color: black;
-    position: fixed;
-    position: fixed;
+    position: scroll;
+  
    
     top: 0; /* Ensure the nav stays at the top of the page */
     width: 100%;
