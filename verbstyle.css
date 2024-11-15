@@ -134,7 +134,7 @@ iframe {
     .homemenu {
         display: flex;
         flex-direction: column;
-        padding-top: 50%;
+        padding-top: 1rem;
     }
 }
 
