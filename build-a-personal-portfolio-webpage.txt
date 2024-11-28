@@ -1,0 +1,119 @@
+** start of undefined **
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Will Chittick - showcasing creative work in photography, video, and digital media.">
+    <meta name="author" content="Will Chittick">
+    <title>Will Chittick Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add any external font or CSS library links here -->
+    <link rel="icon" href="https://willisaverb.com/black-dog-logo%2048x48.png" type="image/x-icon">
+</head>
+<body>
+  <nav id='navbar' class='navbar'><a href='#classless'>Jump to portfolio</a></nav>
+<div class='welcome' id='welcome-section'><h1>Will Chittick - Some kind of art</h1>
+  </div>
+  <div class='projects' id='projects'><div>Projects
+    https://github.com/willisaverb</div>
+    <div><h1 class='project-tile'>Projects</h1></div>
+<iframe class='hollow-day' src="https://bandcamp.com/EmbeddedPlayer/track=2867673290/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://willchittick.bandcamp.com/track/hollow-day">Hollow Day by Will Chittick</a></iframe>
+<iframe class='black-dog'  src="https://bandcamp.com/EmbeddedPlayer/album=262336589/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://willchittick.bandcamp.com/album/black-dog-of-desire">Black Dog of Desire by Will Chittick</a></iframe>
+
+
+<iframe class='strangers' allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/87547393&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/thechitticks" title="The Chitticks" target="_blank" style="color: #cccccc; text-decoration: none;">The Chitticks</a> · <a href="https://soundcloud.com/thechitticks/strangers-have-the-best-candy" title="Strangers Have the Best Candy" target="_blank" style="color: #cccccc; text-decoration: none;">Strangers Have the Best Candy</a></div>
+<div class='github' id='github'>
+  
+  <div class="classless" id="classless"><img src='https://willisaverb.github.io/Library-Tool-Box/assets/images/Whatmeworry.gif' alt='What me worry?'><p><a id='profile-link' href='willisaverb.com' target='_blank'>Cum check me owt on Github daweg</a></p></div>
+  <p>Just some paragraph text dawg, not really getting how this column stuff works but hey whatever the fuck dawg.</p>
+</div>
+<div>
+  <img src='https://th.bing.com/th/id/OIP.7MTPJSqWfwQ7fMIpVgSGrAHaHa?rs=1&pid=ImgDetMain>
+  </div>
+</div>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+.welcome {
+  background-color: black;
+  height: 100vh;
+  color: white; /* Corrected from font-color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 { 
+  color: white;
+  font-family: "Handright", sans-serif;
+}
+
+.projects {
+  background-color: antiquewhite;
+  height: 100vh;
+  color: white; /* Corrected from font-color */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem
+
+}
+
+@font-face {
+  font-family: 'Handright';
+  src: url('https://willisaverb.com/Handright-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav {
+  font-family: 'Handright', sans-serif;
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  border: 0;
+  width: 350px;
+  height: 442px;
+}
+
+.hollow-day {
+  grid-column: 1; /* Changed to place in the second column */
+  margin: 1rem;
+}
+
+.black-dog {
+  grid-column: 2; /* Changed to place in the third column */
+  margin: 1rem;
+}
+
+.github {
+  grid-column: 2;
+
+  top: 50%;
+  display: inline;
+}
+
+strangers {
+  grid-column: 3;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr; /* Change to a single column */
+  }
+}
+
+
+** end of undefined **
+
