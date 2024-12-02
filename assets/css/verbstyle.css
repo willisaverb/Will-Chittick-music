@@ -14,7 +14,7 @@ body {
 
 /* Navigation styles */
 nav {
-    font-family: 'Handright', sans-serif
+    font-family: 'Handright', sans-serif;
     position: static;
     top: 0; /* Ensure the nav stays at the top of the page */
     width: 100%;
@@ -133,9 +133,9 @@ iframe {
         display: flex;
         color: aliceblue;
         flex-direction: column;
-        margin-top: 5%;
+        margin-top: 25%;
         color: whitesmoke;
-        
+        top: 50%;
 
     }
     
