@@ -7,7 +7,7 @@ body {
 
 @font-face { /* Pick absolute path to url of ttf or otf file for custom font */
   font-family: 'Handright'; /* PHandwritten using Caligra[hy.com * looitup] */
-  src: url('https://willisaverb.com/Handright-Regular.ttf') format('truetype');
+  src: url('https://willisaverb.com/assets/font/Handright-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -145,10 +145,14 @@ iframe {
         
     }
     
-    .solid-nav h1{
-       padding: 2rem;
+    .solid-nav item{
+       margin: 2rem;
+        padding: 2rem;
+    
         
     }
+    
+    
 }
 
 .homemenu a {
