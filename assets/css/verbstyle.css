@@ -26,9 +26,7 @@ nav {
     align-items: center; /* Vertically center items */
     text-decoration: none;
 
-    nav a {
-        text-decoration: none;
-    }
+   
  
 }
 
@@ -93,17 +91,6 @@ iframe {
     
 }
 
-@media (max-width 768px) {
-   
-         display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center;     /* Center content horizontally */
-              /* Full viewport height */
-            /* Full viewport width (optional, if needed) */
-    max-height: 150px; 
-}
-}
 
 /* Main image responsiveness */
 .main-image {
@@ -124,47 +111,21 @@ iframe {
     padding-top: 0px; /* Padding not needed here unless for design adjustments */
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .main-logo {
-        max-width: 80%; /* Shrink the logo slightly on smaller screens */
-        margin-top: inherit;
-    }
-}
-
-
-/* Media query for smaller screens (tablets and phones) */
-@media (max-width: 768px) {
-    .main-image {
-        width: 90%;
-        
-       
-    }
-    
-    nav .item { 
-        display: block; /* Stacks the nav items vertically on small screens */
-        text-align: center; /* Center nav items for better mobile alignment */
-    }
-
-    nav img {
-        height: 3em; /* Adjust logo size on mobile */
-        transform: scale(1.5); /* Slightly smaller logo for mobile */
-        padding-top: 1rem;
-    }
-    
+@media (max-width; 888px) {
     .homemenu {
-        display: flex;
-        color: aliceblue;
-        flex-direction: column;
-        margin-top: 5%;
-        
-
+        display: block;
+        text-align: center;
     }
 }
 
 a {
-    text-decoration: ;
+    text-decoration: none;
     color: black;
+}
+
+a:hover {
+  color: #0056b3; /* Color on hover */
+  text-decoration: underline; /* Optional: Add underline on hover */
 }
 
 
