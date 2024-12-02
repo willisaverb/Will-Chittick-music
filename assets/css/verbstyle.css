@@ -162,6 +162,11 @@ iframe {
     }
 }
 
+a {
+    text-decoration: ;
+    color: black;
+}
+
 
 /* Main body background with fixed image */
 .body-main {
