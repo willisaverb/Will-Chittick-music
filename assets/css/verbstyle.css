@@ -106,15 +106,35 @@ iframe {
 .main-logo {
     max-width: 100%; /* Logo will scale based on the container's width (viewport) */
     height: auto;    /* Maintain the aspect ratio */
-    margin: 150px auto 0 auto; /* Vertically space it with margin-top */
+    margin: 0 auto 0 auto; /* Vertically space it with margin-top */
     display: block;  /* Ensure it's a block-level element (removing any unwanted inline behavior) */
-    padding-top: 0px; /* Padding not needed here unless for design adjustments */
+    padding-top: 0159px; /* Padding not needed here unless for design adjustments */
 }
 
-@media (max-width; 888px) {
+@media (max-width: 768px) {
+    .main-logo {
+        top: 0;
+        width: auto;
+        padding-top: 0px;
+        
+        
+       
+    }
+    
+    nav .item { 
+        display: block; /* Stacks the nav items vertically on small screens */
+        text-align: center; /* Center nav items for better mobile alignment */
+    }
+
+    
+    
     .homemenu {
-        display: block;
-        text-align: center;
+        display: flex;
+        color: aliceblue;
+        flex-direction: column;
+        margin-top: 5%;
+        
+
     }
 }
 
@@ -315,4 +335,8 @@ strangers {
 .body-type {
     
     
+}
+
+.open-tab {
+    transform: scale(2)
 }
