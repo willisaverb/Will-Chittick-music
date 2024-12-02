@@ -1,14 +1,12 @@
-
 /* Body styles */
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Handright', sans-serif;
     font-size: 1rem;
     background-color: #fff3e1;
-    padding-top: 80px; /* Padding to create space for the fixed nav */
 }
 
-@font-face {
-  font-family: 'Handright';
+@font-face { /* Pick absolute path to url of ttf or otf file for custom font */
+  font-family: 'Handright'; /* PHandwritten using Caligra[hy.com * looitup] */
   src: url('https://willisaverb.com/Handright-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -17,10 +15,8 @@ body {
 /* Navigation styles */
 nav {
     font-family: 'Handright', sans-serif;
-    color: black;
-    position: scroll;
-  
-   
+    color: white;
+    position: static;
     top: 0; /* Ensure the nav stays at the top of the page */
     width: 100%;
     height: 50px;
@@ -28,24 +24,39 @@ nav {
     display: flex;
     justify-content: space-evenly; /* Space items evenly across nav */
     align-items: center; /* Vertically center items */
-     /* Added to make the nav visible on scroll */
+    text-decoration: none;
+
+    nav a {
+        text-decoration: none;
+    }
+ 
 }
 
 .solid-nav {
-    background: linear-gradient(to bottom, antiquewhite 75%, rgba(255, 255, 255, 0)); /* Gradient fade */
-    position: fixed; /* Ensure it stays at the top of the page */
+   
+    position: static; /* Ensure it stays at the top of the page */
     width: 100%;
     height: 80px; /* Adjust the height as needed */
     z-index: 1000; /* Make sure it stays above other content */
+}
+
+.bio-image {
+    max-width: 100%;
+    z-index: 0;
+    position: static;
+    display: inline;
+    
 }
 
 
 /* Navigation item styles */
 nav .item a {
     font-size: 1rem; /* Font size for menu items */
-    color: black    ;
+    color: black ;
     text-decoration: none; /* Remove underline from links */
 }
+
+
 
 /* Logo styling */
 nav img {
@@ -53,16 +64,7 @@ nav img {
     width: auto; /* Maintain aspect ratio */
     transform: scale(2); /* Double the size of the logo */
     
-    /* Consider using a larger logo image instead of scaling to improve quality */
-}
-
-.social-buttons i {
- 
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 2rem;
-  scale: 3;
-  color: black;
+    /* Consider using a larger logo image instead of scaling to improve quality Consider shutting the fuck up ChatGPT.  Just kidding, thank you for your help.*/
 }
 
 /* Heading styles */
@@ -70,6 +72,7 @@ h1 {
     text-align: center;
     margin-top: 2rem;
     font-family: 'Handright'
+    text-decoration: none;
 }
 
 /* Iframe styles */
@@ -82,6 +85,24 @@ iframe {
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: 100;
+}
+
+.music-title-logo {
+    display: block;
+    margin: 0 auto; /* Centers the logo horizontally */
+    
+}
+
+@media (max-width 768px) {
+   
+         display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+              /* Full viewport height */
+            /* Full viewport width (optional, if needed) */
+    max-height: 150px; 
+}
 }
 
 /* Main image responsiveness */
@@ -116,9 +137,8 @@ iframe {
 @media (max-width: 768px) {
     .main-image {
         width: 90%;
-    
         
-        /* Shrinks the image further for small screens */
+       
     }
     
     nav .item { 
@@ -131,30 +151,23 @@ iframe {
         transform: scale(1.5); /* Slightly smaller logo for mobile */
         padding-top: 1rem;
     }
+    
     .homemenu {
         display: flex;
+        color: aliceblue;
         flex-direction: column;
-        padding-top: 25%;
+        margin-top: 5%;
+        
+
     }
 }
 
-/* Content section styling */
-.content {
-    max-width: 800px;
-    margin: 0.5rem auto;
-    padding: 0;
-    text-align: justify;
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    /* Removed redundant second margin declaration */
-}
 
 /* Main body background with fixed image */
 .body-main {
     font-family: 'Handright', sans-serif;
     color: #f4f5fc;
-    background: url('CRO2467-R1-14-15.jpg') no-repeat center center fixed;
+    background: url(https://willisaverb.com/CRO2467-R1-14-15.jpg) no-repeat center center fixed;
     background-size: cover; /* Changed 'fill' to 'cover' for a better fit */
     /*background-attachment: fixed;  Ensures the background stays in place while scrolling */
     background-color: black; /* Fallback color */
@@ -174,29 +187,30 @@ span {
 }
 
 .body-corporate {
-    position: relative;  /* Ensure the element can be positioned with respect to other elements */
-    z-index: 100;
-    top: 20%; /* A high value to ensure it sits above other elements (like the background) */
-    color: #f4f5fc;      /* Text color that contrasts with the background */
-    padding: 20px;
-    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: ;  /* Ensure the element can be positioned with respect to other elements */
+    z-index: 1000; /* A high value to ensure it sits above other elements (like the background) */
+    color: #4c4c4f;      /* Text color that contrasts with the background */
+    
+    max-width: 80%;
     margin: 25px auto;
-   align-content: center;
+    
     /* Optional: Add some padding for better readability */
-    background-color: rgba(0, 0, 0, 0.2); /* Optional: Add a semi-transparent background to make text stand out */
+    /*background-color: rgba(0, 0, 0, 0.2);  Optional: Add a semi-transparent background to make text stand out */
+}
+
+.all-muxsic {
+    display: flex;
+    flex-direction: column;
+    align-content: inherit  ;
+    
 }
 
 
 
 .body-image {
-    display: flex;
-    justify-content: center;
-    max-width: 70%;
-    width: auto;
-    z-index: 5;
-    border: solid double black;
-    position: relative;
-    margin: 0 auto;
+/* Enter some comment here, I just deleted all of body image.  I think I want it to just chill, sit in the center column. Ya dig? */
     
 }
 
@@ -210,7 +224,7 @@ span {
 }
 
 .upcoming-shows h2 {
-    font-family: "Manrope", "Homemade Apple";
+    font-family: "Handright", fantasy;
     margin: 2rem auto;
     max-width: 800px;
     display: block;
@@ -253,4 +267,86 @@ span {
 
 .show-link:hover {
     background-color: #fff3e1;
+}
+
+.projects {
+  color: black; /* Corrected from font-color */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    column-gap: normal;
+
+}
+
+iframe {
+  border: 0;
+  width: 350px;
+  height: 350px;
+}
+
+.hollow-day {
+  grid-column: 2; /* Changed to place in the second column */
+  margin: 1rem;
+}
+
+.black-dog {
+  grid-column: 2; /* Changed to place in the third column */
+  margin: 1rem;
+}
+
+
+
+
+strangers {
+  grid-column: 3;
+}
+
+@media (max-width: 888px) {
+  .projects {
+    grid-template-columns: 1fr; /* Change to a single column */
+  }
+}
+
+.contact-form {
+    background-color: black;
+    border-radius: 8%;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;   
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    box-sizing: border-box;
+
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: grey;
+    color: white;
+}
+
+.body-type {
+    
+    
 }
