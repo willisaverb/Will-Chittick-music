@@ -215,13 +215,11 @@ span {
 
 
 .body-image {
-max-width: 50vh;
-position: static;
-width: 100%;
-height: auto;
-left: 0;
-    /* Enter some comment here, I just deleted all of body image.  I think I want it to just chill, sit in the center column. Ya dig? */
-    
+    max-width: 50vw; /* Image scales to at most half the viewport width */
+    width: auto;     /* Resizes proportionally based on its natural dimensions */
+    height: auto;    /* Maintains aspect ratio */
+    float: right;     /* Floats the image to the right of the text */
+    margin-left: 1em; /* Adds space between the image and the text */
 }
 
 .upcoming-shows {
