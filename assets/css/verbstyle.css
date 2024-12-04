@@ -43,7 +43,7 @@ nav {
     max-width: 100%;
     z-index: 0;
     position: static;
-    display: inline;
+    
     
 }
 
@@ -215,7 +215,12 @@ span {
 
 
 .body-image {
-/* Enter some comment here, I just deleted all of body image.  I think I want it to just chill, sit in the center column. Ya dig? */
+max-width: 50vh;
+position: static;
+width: 100%;
+height: auto;
+left: 0;
+    /* Enter some comment here, I just deleted all of body image.  I think I want it to just chill, sit in the center column. Ya dig? */
     
 }
 
