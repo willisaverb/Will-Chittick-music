@@ -35,19 +35,13 @@
     <input type="email" name="email">
             <p>Postcode</p>
     <input type="text" name="message">
-    <!-- add hidden Honeypot input to prevent spams -->
-    <input type="hidden" name="_gotcha" style="display:none !important">
-    <!-- checkbox handle -->
-            <label for="checkbox">Subscribe for updates?</label>
-    <input type="checkbox" name="subscribe" value="yes" checked>
-    <input type="hidden" name="subscribe" value="no">
-  
-    <!-- select field handle
-    <select name="work-experience">
-        <option value="one-year">0-1 years</option>
-        <option value="one-five-years">1-5 years</option>
-    </select> -->
-    <button type="submit" class=contact-form-button>Send</button>
+  <!-- Honeypot field -->
+    <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+    
+    <!-- Visible form fields -->
+    <label for="checkbox">Subscribe for updates?</label>
+    <input type="checkbox" id="checkbox" name="subscribe" value="yes">
+    <button type="submit" class="contact-form-button">Send</button>
 </form>
             </div>
             </body>
