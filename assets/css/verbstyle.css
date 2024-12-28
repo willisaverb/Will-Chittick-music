@@ -125,7 +125,7 @@ iframe {
     nav .item { 
         display: block; /* Stacks the nav items vertically on small screens */
         text-align: center; /* Center nav items for better mobile alignment */
-        margin:
+        margin: 2rem;
     }
 
     
@@ -143,6 +143,7 @@ iframe {
     .solid-nav{
         display: flex;
         flex-direction: column;
+        margin:25px;
         
     }
     
