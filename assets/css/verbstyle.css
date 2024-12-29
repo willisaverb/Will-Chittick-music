@@ -200,7 +200,8 @@ span {
     color: #4c4c4f;      /* Text color that contrasts with the background */
     
     max-width: 80%;
-    margin: 25px auto;
+    margin: auto;
+    
     
     /* Optional: Add some padding for better readability */
     /*background-color: rgba(0, 0, 0, 0.2);  Optional: Add a semi-transparent background to make text stand out */
@@ -317,10 +318,11 @@ strangers {
 
 .contact-form {
     background-color: black;
+    position: static;
     border-radius: 8%;
     flex-direction: column;
-    max-width: 100%;
-    width: 100%;   
+    max-width: 80%;
+    width: 80%;   
     height: auto;
     padding: 20px;
     justify-content: center;
@@ -328,10 +330,16 @@ strangers {
     align-items: center;
     color: white;
     box-sizing: border-box;
-
+    margin-top: 3rem;
 }
 
-.contact-form input,
+.contact-form input{
+    
+    width: 77%;
+}
+
+
+
 .contact-form select,
 .contact-form button {
     width: 100%;
