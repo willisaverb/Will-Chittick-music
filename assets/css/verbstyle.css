@@ -217,11 +217,14 @@ span {
 
 
 .body-image {
-    max-width: 50vw; /* Image scales to at most half the viewport width */
-    width: auto;     /* Resizes proportionally based on its natural dimensions */
+    display: flex;
+    position: static;
+    overflow: hidden
+    float: right;
+    max-width: 80vw; /* Image scales to at most half the viewport width */
+    width: auto;
     height: auto;    /* Maintains aspect ratio */
-    float: right;     /* Floats the image to the right of the text */
-    margin-left: 1em; /* Adds space between the image and the text */
+   
 }
 
 .upcoming-shows {
