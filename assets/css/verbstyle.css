@@ -122,6 +122,12 @@ iframe {
        
     }
     
+    a:link {
+        color: 00a500;
+        
+        
+    }
+    
     nav .item { 
         display: block; /* Stacks the nav items vertically on small screens */
         text-align: center; /* Center nav items for better mobile alignment */
@@ -171,7 +177,7 @@ a:hover {
 
 /* Main body background with fixed image */
 .body-main {
-
+    
     font-family: 'Handright', sans-serif;
     color: #f4f5fc;
     background: url(https://willisaverb.com/assets/images/CRO2467-R1-14-15.jpg) no-repeat center center fixed;
@@ -334,7 +340,7 @@ strangers {
     width: 80%;   
     height: auto;
     padding: 20px;
-    justify-content: center;
+    justify-content: left;
     align-content: center;
     align-items: center;
     color: white;
@@ -418,7 +424,7 @@ li {
     display: block;
     align-content: center;
     justify-content: center;
-    transform: scale(4);
+    
     
     
 }
