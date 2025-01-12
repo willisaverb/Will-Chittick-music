@@ -181,7 +181,7 @@ a:hover {
     margin: 0;
     padding: 0;
     animation: backgroundscale 10s ease-in-out infinite; /* Continuous scaling animation */
-    max-width: 100vh;
+    max-width: 100%;
     
 }
 
@@ -243,7 +243,6 @@ span {
     margin: 2rem auto;
     max-width: 800px;
     display: block;
-    position: relative;
     margin: 30px 30px 30px 30px;
 
 }
@@ -289,6 +288,7 @@ span {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
     column-gap: normal;
+    max-width: 100%;
 
 }
 
@@ -323,13 +323,12 @@ strangers {
 
 
 .top-logo {
-    margin-left: 30%;
+    margin-left: 50%;
 
 }
 .contact-form {
-    background-color: black;
-    position: static;
     border-radius: 8%;
+    
     flex-direction: column;
     max-width: 80%;
     width: 80%;   
@@ -340,13 +339,15 @@ strangers {
     align-items: center;
     color: white;
     box-sizing: border-box;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .contact-form input{
     
     width: 77%;
 }
+
+
 
 
 
@@ -494,4 +495,10 @@ ul {
 .contrast-card {
     background-color: #d3d3d38F;
     padding: 1rem;
+}
+
+
+.body-video {
+    width: inherit;
+    
 }
