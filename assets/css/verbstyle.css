@@ -181,6 +181,7 @@ a:hover {
     margin: 0;
     padding: 0;
     animation: backgroundscale 10s ease-in-out infinite; /* Continuous scaling animation */
+    max-width: 100vh;
     
 }
 
