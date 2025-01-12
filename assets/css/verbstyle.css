@@ -171,6 +171,7 @@ a:hover {
 
 /* Main body background with fixed image */
 .body-main {
+
     font-family: 'Handright', sans-serif;
     color: #f4f5fc;
     background: url(https://willisaverb.com/assets/images/CRO2467-R1-14-15.jpg) no-repeat center center fixed;
@@ -319,6 +320,11 @@ strangers {
   }
 }
 
+
+.top-logo {
+    margin-left: 30%;
+
+}
 .contact-form {
     background-color: black;
     position: static;
@@ -373,4 +379,118 @@ strangers {
 
 .open-tab {
     transform: scale(2)
+}
+
+
+/* Menu styling */
+
+.off-screen-menu {
+  background: url(https://willisaverb.com/assets/images/CRO2467-R1-14-15.jpg) no-repeat center center fixed;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  font-size: 3rem;
+  transition: .3s ease;
+  text-decoration: none;
+    list-style-type: none;
+      
+}
+
+li {
+    
+ margin-top: 25%;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+.top-logo {
+    width: 100%;
+    display: block;
+    align-content: center;
+    justify-content: center;
+    transform: scale(4);
+    
+    
+}
+
+.top-space {
+    height: 5vh;
+}
+
+
+
+
+
+
+.off-screen-menu.active {
+  right: 0;
+    list-style-type: none;
+  
+}
+
+
+
+
+.ham-menu {
+  height: 50px; 
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+margin-right: 2em;
+  
+}
+
+.ham-menu span {
+  height: .5rem;
+  width: 100%;
+  background-color: black;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+} 
+
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+    
+}
+
+.ham-menu.active span:nth-child(2) {
+opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+    
+}
+
+ul {
+  font-family: 'Work Sans', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.contrast-card {
+    background-color: #d3d3d38F;
+    padding: 1rem;
 }
