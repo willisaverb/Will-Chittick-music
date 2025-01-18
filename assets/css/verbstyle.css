@@ -328,10 +328,7 @@ strangers {
 }
 
 
-.top-logo {
-    margin-left: 50%;
 
-}
 .contact-form {
     border-radius: 8%;
     
@@ -420,7 +417,9 @@ li {
 }
 
 .top-logo {
-    width: 100%;
+    max-width: 100%;
+    display: flex;
+    height: auto;
     display: block;
     align-content: center;
     justify-content: center;
