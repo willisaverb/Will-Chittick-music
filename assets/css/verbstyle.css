@@ -394,7 +394,7 @@ strangers {
 /* Menu styling */
 
 .off-screen-menu {
-  background-color:#838383;
+  background-color:rgba(131, 131, 131, 0.5);
   height: 100vh;
   width: 100%;
   max-width: 450px;
