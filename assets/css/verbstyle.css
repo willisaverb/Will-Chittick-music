@@ -230,7 +230,7 @@ span {
     overflow: hidden
     float: right;
     max-width: 80vw; /* Image scales to at most half the viewport width */
-    width: auto;
+    width: 50vw;
     height: auto;    /* Maintains aspect ratio */
    
 }
@@ -324,6 +324,16 @@ strangers {
 @media (max-width: 888px) {
   .projects {
     grid-template-columns: 1fr; /* Change to a single column */
+  }
+
+  .body-image {
+    display: flex;
+    position: static;
+    overflow: hidden
+    float: right;
+    max-width: 80vw; /* Image scales to at most half the viewport width */
+    width: auto;
+    height: auto;    /* Maintains aspect ratio */
   }
 }
 
