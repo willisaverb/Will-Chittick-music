@@ -170,9 +170,14 @@ iframe {
 }
 
 a:hover {
-  color: #0056b3; /* Color on hover */
+  color: #bcd6f3; /* Color on hover */
   text-decoration: underline; /* Optional: Add underline on hover */
+ 
 }
+
+a:visited { text-decoration: none; color:black; }
+
+a:hover { text-decoration: none; color:blue; }
 
 
 /* Main body background with fixed image */
@@ -334,6 +339,10 @@ strangers {
     max-width: 80vw; /* Image scales to at most half the viewport width */
     width: auto;
     height: auto;    /* Maintains aspect ratio */
+  }
+
+  .top-space {
+    display: hidden;
   }
 }
 
