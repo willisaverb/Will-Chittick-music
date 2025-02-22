@@ -332,7 +332,7 @@ strangers {
   .body-image {
     display: flex;
     position: static;
-    overflow: hidden
+    overflow: hidden;
     float: right;
     max-width: 80vw; /* Image scales to at most half the viewport width */
     width: auto;
