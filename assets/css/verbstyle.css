@@ -209,7 +209,7 @@ span {
 .body-corporate {
     display: flex;
     flex-direction: column;
-    position: ;  /* Ensure the element can be positioned with respect to other elements */
+   
    
     color: #4c4c4f;      /* Text color that contrasts with the background */
     
@@ -221,7 +221,7 @@ span {
     /*background-color: rgba(0, 0, 0, 0.2);  Optional: Add a semi-transparent background to make text stand out */
 }
 
-.all-muxsic {
+.all-music {
     display: flex;
     flex-direction: column;
     align-content: inherit  ;
