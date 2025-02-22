@@ -185,7 +185,7 @@ a:hover { text-decoration: none; color:blue; }
 .body-main {
     
     font-family: 'Handright', sans-serif;
-    color: #f4f5fc;
+    
     background: url(https://willisaverb.com/assets/images/CRO2467-R1-14-15.jpg) no-repeat center center fixed;
     background-size: cover; /* Changed 'fill' to 'cover' for a better fit */
     /*background-attachment: fixed;  Ensures the background stays in place while scrolling */
