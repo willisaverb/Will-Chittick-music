@@ -394,7 +394,7 @@ strangers {
 /* Menu styling */
 
 .off-screen-menu {
-  background: url(https://willisaverb.com/assets/images/CRO2467-R1-14-15.jpg) no-repeat center center fixed;
+  background-color:#838383;
   height: 100vh;
   width: 100%;
   max-width: 450px;
