@@ -233,8 +233,7 @@ span {
 .body-image {
     display: flex;
     position: static;
-    overflow: hidden
-    float: right;
+    overflow: hidden;
     max-width: 80vw; /* Image scales to at most half the viewport width */
     width: 50vw;
     height: auto;    /* Maintains aspect ratio */
