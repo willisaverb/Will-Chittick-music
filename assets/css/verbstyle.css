@@ -168,6 +168,7 @@ iframe {
     color: aliceblue;
     
 }
+a {color: #ffffff}
 
 a:hover {
   color: #bcd6f3; /* Color on hover */
@@ -436,7 +437,7 @@ li {
     
  margin-top: 25%;
     text-decoration: underline;
-    text-decoration-color: aqua;
+    text-decoration-color: rgb(255, 255, 255);
 }
 
 .top-logo {
