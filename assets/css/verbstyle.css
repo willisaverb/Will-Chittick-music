@@ -50,7 +50,7 @@ a:hover {
    - Headings, paragraphs, and other text elements.
 */
 h1, h2, h3 {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Handright', sans-serif;
     text-align: center;
     margin-top: 2rem;
 }
