@@ -1,259 +1,155 @@
-/* Body styles */
+/*
+  verbstyle.css
+  main stylesheet for willisaverb.com
+  ---
+  Author: Will Chittick
+  Date: 2024
+  ---
+  This stylesheet defines the visual appearance of the website, including typography, layout, navigation, and component styling.
+  The design aims for a clean, minimalist aesthetic with a focus on readability and user experience.
+*/
+
+/* 1. General Styling
+   - Body background, font, and color.
+   - Global link styles.
+*/
 body {
     font-family: 'Handright', sans-serif;
     font-size: 1rem;
-    background-color: #fff3e1;
+    background-color: #fff3e1; /* Off-white background for a soft, warm feel */
+    color: #333; /* Dark gray for readable text */
+    margin: 0;
+    padding: 0;
 }
 
-@font-face { /* Pick absolute path to url of ttf or otf file for custom font */
-  font-family: 'Handright'; /* PHandwritten using Caligra[hy.com * looitup] */
+.body-main {
+    background: url(https://willisaverb.com/assets/images/CRO2467-R1-14-15.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: black; /* Fallback color */
+    animation: backgroundscale 10s ease-in-out infinite;
+}
+
+@font-face {
+  font-family: 'Handright';
   src: url('https://willisaverb.com/assets/font/Handright-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-/* Navigation styles */
-nav {
-    font-family: 'Handright', sans-serif;
-    position: static;
-    /*top: 0; Ensure the nav stays at the top of the page */
-    width: 100%;
-    height: 50px;
-    
-    display: flex;
-    justify-content: space-evenly; /* Space items evenly across nav */
-    align-items: center; /* Vertically center items */
-    text-decoration: none;
-    margin-top: 2rem;
-
-   
- 
-}
-
-.solid-nav {
-   color: black;
-    text-decoration: none;
-    position: static; /* Ensure it stays at the top of the page */
-    width: 100%;
-    height: 80px; /* Adjust the height as needed */
-    z-index: 1000; /* Make sure it stays above other content */
-}
-
-.bio-image {
-    max-width: 100%;
-    z-index: 0;
-    position: static;
-    
-    
-}
-
-
-/* Navigation item styles */
-nav .item a {
-    font-size: 1rem; /* Font size for menu items */
-    color: black ;
-    text-decoration: none; /* Remove underline from links */
-}
-
-
-
-/* Logo styling */
-nav img {
-    height: 2em; /* Set initial height of logo */
-    width: auto; /* Maintain aspect ratio */
-    transform: scale(2); /* Double the size of the logo */
-    
-    /* Consider using a larger logo image instead of scaling to improve quality Consider shutting the fuck up ChatGPT.  Just kidding, thank you for your help.*/
-}
-
-/* Heading styles */
-h1 {
-    text-align: center;
-    margin-top: 2rem;
-    font-family: 'Handright'
+a {
+    color: #007bff; /* Standard blue for links */
     text-decoration: none;
 }
-
-/* Iframe styles */
-iframe {
-    display: block;
-    max-width: 300px;
-    margin: 2rem auto;
-    font-size: 10px;
-    color: #cccccc;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-weight: 100;
-}
-
-.music-title-logo {
-    display: block;
-    margin: 0 auto; /* Centers the logo horizontally */
-    
-}
-
-
-/* Main image responsiveness */
-.main-image {
-    max-width: 100%; /* Image should not exceed container width */
-    height: auto;    /* Maintain aspect ratio */
-    display: flex;  /* Remove any inline spacing */
-    margin: 0 auto;  /* Center the image */
-    padding-top: 150px;
-    position: absolute;
-    
-}
-
-.main-logo {
-    max-width: 100%; /* Logo will scale based on the container's width (viewport) */
-    height: auto;    /* Maintain the aspect ratio */
-    margin: 0 auto 0 auto; /* Vertically space it with margin-top */
-    display: block;  /* Ensure it's a block-level element (removing any unwanted inline behavior) */
-    padding-top: 0159px; /* Padding not needed here unless for design adjustments */
-}
-
-@media (max-width: 768px) {
-    .main-logo {
-        top: 0;
-        width: auto;
-        padding-top: 0px;
-        
-        
-       
-    }
-    
-    a:link {
-        color: 00a500;
-        
-        
-    }
-    
-    nav .item { 
-        display: block; /* Stacks the nav items vertically on small screens */
-        text-align: center; /* Center nav items for better mobile alignment */
-        margin: 2rem;
-    }
-
-    
-    
-    .homemenu {
-        display: flex;
-        color: aliceblue;
-        flex-direction: column;
-        margin-top: 25%;
-        color: whitesmoke;
-        top: 50%;
-
-    }
-    
-    .solid-nav{
-        display: flex;
-        flex-direction: column;
-        margin:25px;
-        
-    }
-    
-    .solid-nav item{
-       margin: 2rem;
-        padding: 2rem;
-    
-        
-    }
-    
-    
-}
-
-.homemenu a {
-    text-decoration: none;
-    color: aliceblue;
-    
-}
-a {color: #ffffff}
 
 a:hover {
-  color: #bcd6f3; /* Color on hover */
-  text-decoration: underline; /* Optional: Add underline on hover */
- 
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
 }
 
-a:visited { text-decoration: none; color:black; }
-
-a:hover { text-decoration: none; color:blue; }
-
-
-/* Main body background with fixed image */
-.body-main {
-    
-    font-family: 'Handright', sans-serif;
-    
-    background: url(https://willisaverb.com/assets/images/CRO2467-R1-14-15.jpg) no-repeat center center fixed;
-    background-size: cover; /* Changed 'fill' to 'cover' for a better fit */
-    /*background-attachment: fixed;  Ensures the background stays in place while scrolling */
-    background-color: black; /* Fallback color */
-    margin: 0;
-    padding: 0;
-    animation: backgroundscale 10s ease-in-out infinite; /* Continuous scaling animation */
-    max-width: 100%;
-    
+/* 2. Typography
+   - Headings, paragraphs, and other text elements.
+*/
+h1, h2, h3 {
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    margin-top: 2rem;
 }
 
-/* Empty or unused classes */
-.homemenu {
-    /* Define styles if necessary */
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
-span {
-    /* Define styles if necessary */
-}
-
+/* 3. Layout
+   - Main content container and responsive design.
+*/
 .body-corporate {
-    display: flex;
-    flex-direction: column;
-   
-   
-    color: #4c4c4f;      /* Text color that contrasts with the background */
-    
     max-width: 80%;
     margin: auto;
-    
-    
-    /* Optional: Add some padding for better readability */
-    /*background-color: rgba(0, 0, 0, 0.2);  Optional: Add a semi-transparent background to make text stand out */
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 5px;
 }
 
-.all-music {
+/* 4. Navigation
+   - Hamburger menu and off-screen navigation.
+*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.top-logo {
+    height: 5vh;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ham-menu span {
+    height: 0.5rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+
+.ham-menu span:nth-child(1) { top: 25%; }
+.ham-menu span:nth-child(2) { top: 50%; }
+.ham-menu span:nth-child(3) { top: 75%; }
+
+.ham-menu.active span:nth-child(1) { top: 50%; transform: translate(-50%, -50%) rotate(45deg); }
+.ham-menu.active span:nth-child(2) { opacity: 0; }
+.ham-menu.active span:nth-child(3) { top: 50%; transform: translate(-50%, -50%) rotate(-45deg); }
+
+.off-screen-menu {
+    background-color: rgba(51, 51, 51, 0.9);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
     display: flex;
     flex-direction: column;
-    align-content: inherit  ;
-    
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    list-style-type: none;
+    padding: 0;
 }
 
-
-
-.body-image {
-    float: right; /* Ensures the image floats to the right, allowing text to wrap around it */
-    max-width: 80vw; /* Image scales to at most 80% of the viewport width */
-    width: 50vw; /* Image width is 50% of the viewport width */
-    height: auto; /* Maintains aspect ratio */
-    margin: 0 0 1em 1em; /* Adds some space around the image for better text wrapping */
+.off-screen-menu.active {
+    right: 0;
 }
 
-.upcoming-shows {
-    font-family: "Handright";
-    margin: 2rem auto;
-    max-width: 800px;
+.off-screen-menu li {
+    margin: 2rem 0;
+}
+
+.off-screen-menu a {
+    font-size: 2rem;
+    color: white;
+}
+
+/* 5. Components
+   - Buttons, forms, cards, and other UI elements.
+*/
+.contrast-card {
+    background-color: rgba(211, 211, 211, 0.56);
     padding: 1rem;
-    margin 150px;
-
-}
-
-.upcoming-shows h2 {
-    font-family: "Handright", fantasy;
-    margin: 2rem auto;
-    max-width: 800px;
-    display: block;
-    margin: 30px 30px 30px 30px;
-
+    border-radius: 5px;
 }
 
 .show-card {
@@ -263,128 +159,29 @@ span {
     border: 1px solid #ccc;
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #8c857b;
-    margin: 1rem;
+    background-color: #f9f9f9;
     border-radius: 5px;
 }
 
-.show-date {
-    font-size: 1rem;
-    font-family: "Manrope";
-    font-weight: bold;
-    color: #333;
-}
-
-.show-venue {
-    font-size: 1rem;
-    color: #fff3e1;
-}
-
-.show-link {
-    background-color: #9f9d9c;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.show-link:hover {
-    background-color: #fff3e1;
-}
-
-.projects {
-  color: black; /* Corrected from font-color */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-    column-gap: normal;
-    max-width: 100%;
-
-}
-
-iframe {
-  border: 0;
-  width: 350px;
-  height: 350px;
-}
-
-.hollow-day {
-  grid-column: 2; /* Changed to place in the second column */
-  margin: 1rem;
-}
-
-.black-dog {
-  grid-column: 2; /* Changed to place in the third column */
-  margin: 1rem;
-}
-
-
-
-
-strangers {
-  grid-column: 3;
-}
-
-@media (max-width: 888px) {
-  .projects {
-    grid-template-columns: 1fr; /* Change to a single column */
-  }
-
-  .body-image {
-    display: flex;
-    position: static;
-    overflow: hidden;
-    float: right;
-    max-width: 80vw; /* Image scales to at most half the viewport width */
-    width: auto;
-    height: auto;    /* Maintains aspect ratio */
-  }
-
-  .top-space {
-    display: hidden;
-  }
-}
-
-
-.top-logo {
-    margin-left: 50%;
-
-}
 .contact-form {
-    border-radius: 8%;
-    
-    flex-direction: column;
     max-width: 80%;
-    width: 80%;   
-    height: auto;
+    margin: 2rem auto;
     padding: 20px;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    background-color: #333;
     color: white;
-    box-sizing: border-box;
-    margin-top: 2rem;
-    margin-left: 5rem;
+    border-radius: 8px;
 }
 
-.contact-form input{
-    
-    width: 50%;
-}
-
-
-
-
-
+.contact-form input,
 .contact-form select,
 .contact-form button {
-    width: 25%;
+    width: 100%;
     margin-bottom: 10px;
     padding: 8px;
     border: 1px solid white;
     border-radius: 4px;
     background: black;
     color: white;
-    box-sizing: border-box;
 }
 
 .contact-form button {
@@ -395,131 +192,43 @@ strangers {
 
 .contact-form button:hover {
     background: grey;
-    color: white;
 }
 
-.body-type {
-    
-    
-}
-
-.open-tab {
-    transform: scale(2)
-}
-
-
-/* Menu styling */
-
-.off-screen-menu {
-  background-color:rgba(131, 131, 131, 0.5);
-  height: 100vh;
-  width: 100%;
-  max-width: 450px;
-  position: fixed;
-  top: 0;
-  right: -450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  text-align: left;
-  font-size: 3rem;
-  transition: .3s ease;
-  text-decoration: none;
-    list-style-type: none;
-      
-}
-
-li {
-    
- margin-top: 25%;
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 255, 255);
-}
-
-.top-logo {
+/* 6. Image Handling
+   - Responsive images and logos.
+*/
+.main-logo, .body-image {
     max-width: 100%;
-    height: 5vh; 
-    
+    height: auto;
+    display: block;
+    margin: 1rem auto;
 }
 
-.top-space {
-    height: 5vh;
-}
-
-
-
-
-
-
-.off-screen-menu.active {
-  right: 0;
-  top: 0;
-    list-style-type: none;
-  
-}
-
-
-
-
-.ham-menu {
-  height: 50px; 
-  width: 50px;
-  margin-left: auto;
-  position: relative;
-margin-right: 2em;
-  
-}
-
-.ham-menu span {
-  height: .5rem;
-  width: 100%;
-  background-color: black;
-  border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: .3s ease;
-} 
-
-.ham-menu span:nth-child(1) {
-  top: 25%;
-}
-
-.ham-menu span:nth-child(3) {
-  top: 75%;
-}
-
-.ham-menu.active span:nth-child(1) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-    
-}
-
-.ham-menu.active span:nth-child(2) {
-opacity: 0;
-}
-
-.ham-menu.active span:nth-child(3) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-    
-}
-
-ul {
-  font-family: 'Work Sans', sans-serif;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.contrast-card {
-    background-color: #d3d3d38F;
+/* 7. Music Page
+   - Grid layout for music projects.
+*/
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
     padding: 1rem;
 }
 
+iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
 
-.body-video {
-    width: inherit;
-    
+/* 8. Media Queries
+   - Responsive adjustments for different screen sizes.
+*/
+@media (max-width: 768px) {
+    .body-corporate {
+        max-width: 95%;
+    }
+
+    .ham-menu {
+        margin-right: 1em;
+    }
 }
