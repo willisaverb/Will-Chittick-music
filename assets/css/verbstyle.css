@@ -71,77 +71,54 @@ p {
     border-radius: 5px;
 }
 
-/* 4. Navigation
-   - Hamburger menu and off-screen navigation.
-*/
-nav {
+/* 4. Navigation */
+.homemenu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-}
-
-.top-logo {
-    height: 5vh;
-}
-
-.ham-menu {
-    height: 50px;
-    width: 50px;
-    position: relative;
-    cursor: pointer;
-}
-
-.ham-menu span {
-    height: 0.5rem;
-    width: 100%;
-    background-color: white;
-    border-radius: 25px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.3s ease;
-}
-
-.ham-menu span:nth-child(1) { top: 25%; }
-.ham-menu span:nth-child(2) { top: 50%; }
-.ham-menu span:nth-child(3) { top: 75%; }
-
-.ham-menu.active span:nth-child(1) { top: 50%; transform: translate(-50%, -50%) rotate(45deg); }
-.ham-menu.active span:nth-child(2) { opacity: 0; }
-.ham-menu.active span:nth-child(3) { top: 50%; transform: translate(-50%, -50%) rotate(-45deg); }
-
-.off-screen-menu {
-    background-color: rgba(51, 51, 51, 0.9);
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    display: flex;
+    color: aliceblue;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 25%;
+    color: whitesmoke;
+    top: 50%;
+}
+
+.homemenu a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.solid-nav {
+   color: black;
+    text-decoration: none;
+    position: static; /* Ensure it stays at the top of the page */
+    width: 100%;
+    height: 80px; /* Adjust the height as needed */
+    z-index: 1000; /* Make sure it stays above other content */
+}
+
+nav {
+    font-family: 'Handright', sans-serif;
+    position: static;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    transition: 0.3s ease;
-    list-style-type: none;
-    padding: 0;
+    text-decoration: none;
+    margin-top: 2rem;
 }
 
-.off-screen-menu.active {
-    right: 0;
+nav .item a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
 }
 
-.off-screen-menu li {
-    margin: 2rem 0;
+nav img {
+    height: 2em;
+    width: auto;
+    transform: scale(2);
 }
 
-.off-screen-menu a {
-    font-size: 2rem;
-    color: white;
-}
 
 /* 5. Components
    - Buttons, forms, cards, and other UI elements.
@@ -204,6 +181,12 @@ nav {
     margin: 1rem auto;
 }
 
+.bio-image {
+    max-width: 100%;
+    z-index: 0;
+    position: static;
+}
+
 /* 7. Music Page
    - Grid layout for music projects.
 */
@@ -228,7 +211,20 @@ iframe {
         max-width: 95%;
     }
 
-    .ham-menu {
-        margin-right: 1em;
+    nav .item {
+        display: block;
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .solid-nav{
+        display: flex;
+        flex-direction: column;
+        margin:25px;
+    }
+
+    .solid-nav item{
+       margin: 2rem;
+        padding: 2rem;
     }
 }
