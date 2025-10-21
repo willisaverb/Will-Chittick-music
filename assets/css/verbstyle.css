@@ -178,7 +178,7 @@ a:hover {
 
 a:visited { text-decoration: none; color:black; }
 
-a:hover { text-decoration: none; color:blue; }
+a:hover { text-decoration: none; color:white; }
 
 
 /* Main body background with fixed image */
@@ -230,7 +230,7 @@ span {
 
 
 
-.body-image {
+body-image {
     float: right; /* Ensures the image floats to the right, allowing text to wrap around it */
     max-width: 80vw; /* Image scales to at most 80% of the viewport width */
     width: 50vw; /* Image width is 50% of the viewport width */
@@ -263,7 +263,7 @@ span {
     border: 1px solid #ccc;
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #8c857b;
+    background-color: #cbc8cc;
     margin: 1rem;
     border-radius: 5px;
 }
@@ -277,7 +277,7 @@ span {
 
 .show-venue {
     font-size: 1rem;
-    color: #fff3e1;
+    color: #322e2e;
 }
 
 .show-link {
